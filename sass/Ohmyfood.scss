@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+@import "./base.scss";
+
+header div {
+    font-family: $family-title;
+    font-size: 4em;
+}
+
+header + div {
+    text-align: center;
+    font-weight: bold;
+}
+
+header div, header + div, h1, .function {
+    @extend .typography-title;
+}
+
+
+
+
+
+@import "./pages.scss";

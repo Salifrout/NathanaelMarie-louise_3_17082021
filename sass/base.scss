@@ -1,0 +1,41 @@
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+@font-face {
+    font-family: $family-title;
+    src: url('roboto/Roboto-Regular.ttf') format('truetype');
+    font-family: $family-content;
+    src: url('shrikhand/Shrikhand-Regular.otf') format('otf');
+}
+
+body {
+    font-family: $family-content, serif; 
+    margin: 0;
+}
+
+.hole {
+    background-color: #f6f6f6;
+}
+
+footer {
+    padding-left: 5%;
+    padding-bottom: 30px;
+    color: white;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    font-family: $family-title;
+}
+
+footer a:nth-child(2) {
+    color: red;
+    background-image: url(./couverts.png);
+    background-repeat: repeat;
+    background-size: 30%;
+    background-position: left;
+}

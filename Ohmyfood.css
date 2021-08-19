@@ -1,0 +1,100 @@
+.typography-title, header div, header + div, h1, .function {
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("shrikhand/Shrikhand-Regular.otf") format("otf");
+}
+body {
+  font-family: "Roboto", serif;
+  margin: 0;
+}
+
+.hole {
+  background-color: #f6f6f6;
+}
+
+footer {
+  padding-left: 5%;
+  padding-bottom: 30px;
+  color: white;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  font-family: "Shrikhand";
+}
+
+footer a:nth-child(2) {
+  color: red;
+  background-image: url(./couverts.png);
+  background-repeat: repeat;
+  background-size: 30%;
+  background-position: left;
+}
+
+header div {
+  font-family: "Shrikhand";
+  font-size: 4em;
+}
+
+header + div {
+  text-align: center;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  display: block;
+  box-shadow: 4px 4px 4px #eaeaea;
+}
+
+header img {
+  width: 43%;
+  margin-top: 28px;
+  margin-bottom: 18px;
+}
+
+header + div {
+  background-color: #eaeaea;
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.hole.home {
+  margin-top: 0;
+  padding-top: 5px;
+}
+
+h1 {
+  margin-left: 17%;
+  margin-right: 21.6%;
+}
+
+h1 + p {
+  margin-left: 10.4%;
+  margin-right: 8.3%;
+}
+
+.hole a {
+  width: 86.7%;
+  margin: 18px auto;
+  border-radius: 50px;
+}
+
+.hole a img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=Ohmyfood.css.map */
