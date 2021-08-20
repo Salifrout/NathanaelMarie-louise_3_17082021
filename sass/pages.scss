@@ -1,6 +1,5 @@
 header {
     text-align: center;
-    display: block;
     box-shadow: 4px 4px 4px #eaeaea;
 }
 
@@ -8,18 +7,33 @@ header img {
     width: 43%;
     margin-top: 28px;
     margin-bottom: 18px;
-
 }
 
 header + div {
+    text-align: center;
+    font-weight: bold;
+    font-family: $family-content;
     background-color: #eaeaea;
     padding-top: 22px;
     padding-bottom: 19px;
+    background-image: url(OhmyfoodImages/local.png);
+    /*background-size: 3.5%;*/
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: right 69% bottom 50%;
 }
 
 .hole.home {
     margin-top: 0;
     padding-top: 5px;
+}
+
+.function {
+    background-color: #f6f6f6;
+    border-radius: 50px;
+    &_order {
+        background-color: $color-primary;
+    }
 }
 
 h1 {
@@ -32,16 +46,20 @@ h1 + p {
     margin-right: 8.3%;
 }
 
-.hole a {
+section a {
     width: 86.7%;
     margin: 18px auto;
     border-radius: 50px;
 }
 
-.hole a img {
-    width: 100%;
+section a img {
+    width: 50%;
 }
 
-.hole button {
+section a div {
+    background-color: $color-tertiary;
+}
 
+.hole a img {
+    width: 100%;
 }

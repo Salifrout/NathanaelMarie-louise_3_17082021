@@ -10,9 +10,9 @@ a {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("./roboto/Roboto-Regular.ttf") format("truetype");
   font-family: "Roboto";
-  src: url("shrikhand/Shrikhand-Regular.otf") format("otf");
+  src: url("./shrikhand/Shrikhand-Regular.otf") format("otf");
 }
 body {
   font-family: "Roboto", serif;
@@ -44,19 +44,8 @@ footer a:nth-child(2) {
   background-position: left;
 }
 
-header div {
-  font-family: "Shrikhand";
-  font-size: 4em;
-}
-
-header + div {
-  text-align: center;
-  font-weight: bold;
-}
-
 header {
   text-align: center;
-  display: block;
   box-shadow: 4px 4px 4px #eaeaea;
 }
 
@@ -67,14 +56,29 @@ header img {
 }
 
 header + div {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto";
   background-color: #eaeaea;
   padding-top: 22px;
   padding-bottom: 19px;
+  background-image: url(OhmyfoodImages/local.png);
+  background-size: 3.5%;
+  background-repeat: no-repeat;
+  background-position: right 69% bottom 50%;
 }
 
 .hole.home {
   margin-top: 0;
   padding-top: 5px;
+}
+
+.function {
+  background-color: #f6f6f6;
+  border-radius: 50px;
+}
+.function_order {
+  background-color: #9356DC;
 }
 
 h1 {
@@ -87,10 +91,18 @@ h1 + p {
   margin-right: 8.3%;
 }
 
-.hole a {
+section a {
   width: 86.7%;
   margin: 18px auto;
   border-radius: 50px;
+}
+
+section a img {
+  width: 50%;
+}
+
+section a div {
+  background-color: #99E2D0;
 }
 
 .hole a img {

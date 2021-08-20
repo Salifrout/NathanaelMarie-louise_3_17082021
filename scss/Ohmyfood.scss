@@ -1,0 +1,16 @@
+@import "../sass/variables.scss";
+
+@import "../sass/base.scss";
+
+@import "../sass/utils.scss";
+
+@import "../sass/layouts.scss";
+
+@import "../sass/components.scss";
+
+@import "../sass/pages.scss";
+
+header div, header + div, h1, .function {
+    @extend .typography-title;
+}
+

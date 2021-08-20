@@ -5,9 +5,9 @@ a {
 
 @font-face {
     font-family: $family-title;
-    src: url('roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('./roboto/Roboto-Regular.ttf') format('truetype');
     font-family: $family-content;
-    src: url('shrikhand/Shrikhand-Regular.otf') format('otf');
+    src: url('./shrikhand/Shrikhand-Regular.otf') format('otf');
 }
 
 body {
