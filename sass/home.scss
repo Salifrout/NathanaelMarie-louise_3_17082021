@@ -1,0 +1,90 @@
+header {
+    text-align: center;
+    box-shadow: 4px 4px 4px #eaeaea;
+}
+
+header img {
+    width: 43%;
+    margin-top: 28px;
+    margin-bottom: 18px;
+}
+
+header + div {
+    text-align: center;
+    font-weight: bold;
+    font-family: $family-content;
+    background-color: #eaeaea;
+    padding-top: 22px;
+    padding-bottom: 19px;
+    background-image: url(OhmyfoodImages/local.png);
+    /*background-size: 3.5%;*/
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: right 64% bottom 50%;
+}
+
+.hole.home {
+    margin-top: 0;
+    padding-top: 5px;
+    & button {
+        width: 58.4%;
+        margin-top: 24px;
+        margin-bottom: 57px;
+        padding-top: 24px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 50px;
+        background-color: $color-secondary;
+    }
+}
+
+.function {
+    width: 86%;
+    margin: 15px auto;
+    background-color: #f6f6f6;
+    border-radius: 18px;
+    &_order {
+        width: 24px;
+        height: 24px;
+        color: white;
+        margin-left: -10px;
+        background-color: $color-primary;
+        border-radius: 50px;
+        
+    }
+}
+
+h1 {
+    margin-left: 17%;
+    margin-right: 21.6%;
+}
+
+h1 + p {
+    margin-left: 10.4%;
+    margin-right: 8.3%;
+}
+
+section a {
+    /*width: 86.7%;
+    margin: 18px auto;*/
+    width: 50%;
+    height: 80px;
+    border-radius: 50px;
+    & div {
+        width: 24%;
+        @extend .typography-title;
+    }
+}
+
+section a img {
+    width: 100%;
+}
+
+section a div {
+    background-color: $color-tertiary;
+}
+
+.hole a img {
+    width: 100%;
+}
