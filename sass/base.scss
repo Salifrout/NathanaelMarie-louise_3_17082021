@@ -4,10 +4,10 @@ a {
 }
 
 @font-face {
-    font-family: $family-title;
-    src: url('./roboto/Roboto-Regular.ttf') format('truetype');
     font-family: $family-content;
-    src: url('./shrikhand/Shrikhand-Regular.otf') format('otf');
+    src: url('../roboto/Roboto-Regular.ttf') format('truetype');
+    font-family: $family-title;
+    src: url('../shrikhand/Shrikhand-Regular.otf') format('otf');
 }
 
 body {
@@ -28,14 +28,30 @@ footer {
     flex-direction: column;
 }
 
-footer p {
+footer:nth-child(1) {
     font-family: $family-title;
 }
 
-footer a:nth-child(2) {
-    color: red;
-    background-image: url(./couverts.png);
-    background-repeat: repeat;
-    background-size: 30%;
-    background-position: left;
+footer:nth-child(2) {
+    width: 49.6%;
+    display: flex;
+    justify-content: space-between;
+    & div {
+        background-image: url(../OhmyfoodImages/couverts.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+}
+
+footer:nth-child(3) {
+    width: 40.8%;
+    display: flex;
+    justify-content: space-between;
+    & div {
+        background-image: url(../OhmyfoodImages/hands.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
 }

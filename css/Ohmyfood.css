@@ -9,10 +9,10 @@ a {
 }
 
 @font-face {
-  font-family: "Shrikhand";
-  src: url("./roboto/Roboto-Regular.ttf") format("truetype");
   font-family: "Roboto";
-  src: url("./shrikhand/Shrikhand-Regular.otf") format("otf");
+  src: url("../roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: "Shrikhand";
+  src: url("../shrikhand/Shrikhand-Regular.otf") format("otf");
 }
 body {
   font-family: "Roboto", serif;
@@ -32,16 +32,32 @@ footer {
   flex-direction: column;
 }
 
-footer p {
+footer:nth-child(1) {
   font-family: "Shrikhand";
 }
 
-footer a:nth-child(2) {
-  color: red;
-  background-image: url(./couverts.png);
-  background-repeat: repeat;
-  background-size: 30%;
-  background-position: left;
+footer:nth-child(2) {
+  width: 49.6%;
+  display: flex;
+  justify-content: space-between;
+}
+footer:nth-child(2) div {
+  background-image: url(../OhmyfoodImages/couverts.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+footer:nth-child(3) {
+  width: 40.8%;
+  display: flex;
+  justify-content: space-between;
+}
+footer:nth-child(3) div {
+  background-image: url(../OhmyfoodImages/hands.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
 }
 
 header {
@@ -72,11 +88,11 @@ header + div {
 .hole.home {
   margin-top: 0;
   padding-top: 5px;
+  padding-bottom: 33px;
 }
 .hole.home button {
   width: 58.4%;
-  margin-top: 24px;
-  margin-bottom: 57px;
+  margin-top: 24px auto;
   padding-top: 24px;
   padding-bottom: 20px;
   text-align: center;
@@ -95,6 +111,7 @@ header + div {
   width: 24px;
   height: 24px;
   color: white;
+  text-align: center;
   margin-left: -10px;
   background-color: #9356DC;
   border-radius: 50px;

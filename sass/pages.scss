@@ -1,0 +1,51 @@
+header {
+    background-image: url(../OhmyfoodImages/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: right 90% bottom 50%;
+}
+
+section {
+    margin-top: -15px;
+    border-radius: 24px 24px 0 0;
+    background-image: url(../OhmyfoodImages/hearts.png);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: right 10% top 5%;
+}
+
+h2 {
+    margin-top: 30px;
+    border-bottom-color: $color-tertiary;
+    border-bottom-width: 15px;
+    padding-bottom: 4px;
+}
+
+.menu {
+    width: 94%;
+    border: 1px solid white;
+    border-radius: 16px;
+    box-shadow: 4px 2px 2px #e5e5e5;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    &:nth-child(2) {
+        position: rigth;
+        margin-right: 5px;
+    }
+    &_registered {
+        display: none;
+        width: 15.7%;
+        background-image: url(../OhmyfoodImages/check.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $color-tertiary;
+        background-size: 37%;
+        transform-origin: right 50%;
+        transition: transform 4000ms;
+    }
+    &:hover + &_registered {
+        display: block;
+    }
+}
+
