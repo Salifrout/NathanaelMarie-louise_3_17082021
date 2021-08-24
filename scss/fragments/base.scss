@@ -5,13 +5,13 @@ a {
 
 @font-face {
     font-family: $family-content;
-    src: url('../roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     font-family: $family-title;
-    src: url('../shrikhand/Shrikhand-Regular.otf') format('otf');
+    src: url('../fonts/shrikhand/Shrikhand-Regular.otf') format(otf);
 }
 
 body {
-    font-family: $family-content, serif; 
+    font-family: $family-content; 
     margin: 0;
 }
 

@@ -1,4 +1,4 @@
-header {
+head_page {
     background-image: url(../OhmyfoodImages/arrow.png);
     background-repeat: no-repeat;
     background-size: 5%;
@@ -42,10 +42,9 @@ h2 {
         background-color: $color-tertiary;
         background-size: 37%;
         transform-origin: right 50%;
-        transition: transform 4000ms;
+        transition: transform 2000ms;
     }
     &:hover + &_registered {
         display: block;
     }
 }
-

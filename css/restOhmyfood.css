@@ -9,13 +9,13 @@ a {
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../roboto/Roboto-Regular.ttf") format("truetype");
-  font-family: "Shrikhand";
-  src: url("../shrikhand/Shrikhand-Regular.otf") format("otf");
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+  font-family: "Shrikhand", cursive;
+  src: url("../fonts/shrikhand/Shrikhand-Regular.otf") format(otf);
 }
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ footer {
 }
 
 footer:nth-child(1) {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
 }
 
 footer:nth-child(2) {
@@ -62,20 +62,18 @@ footer:nth-child(3) div {
 
 header {
   text-align: center;
-  box-shadow: 4px 4px 4px #eaeaea;
 }
-
 header img {
   width: 43%;
   margin-top: 28px;
   margin-bottom: 18px;
 }
-
 header + div {
   text-align: center;
   font-weight: bold;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #eaeaea;
+  box-shadow: 4px 4px 4px #eaeaea insert;
   padding-top: 22px;
   padding-bottom: 19px;
   background-image: url(OhmyfoodImages/local.png);
@@ -127,6 +125,9 @@ h1 + p {
   margin-right: 8.3%;
 }
 
+section {
+  width: 100%;
+}
 section a {
   /*width: 86.7%;
   margin: 18px auto;*/
@@ -134,20 +135,63 @@ section a {
   height: 80px;
   border-radius: 50px;
 }
-section a div {
-  width: 24%;
-}
-
 section a img {
   width: 100%;
 }
-
 section a div {
+  width: 24%;
   background-color: #99E2D0;
 }
 
-.hole a img {
-  width: 100%;
+head_page {
+  background-image: url(../OhmyfoodImages/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: right 90% bottom 50%;
 }
 
-/*# sourceMappingURL=Ohmyfood.css.map */
+section {
+  margin-top: -15px;
+  border-radius: 24px 24px 0 0;
+  background-image: url(../OhmyfoodImages/hearts.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: right 10% top 5%;
+}
+
+h2 {
+  margin-top: 30px;
+  border-bottom-color: #99E2D0;
+  border-bottom-width: 15px;
+  padding-bottom: 4px;
+}
+
+.menu {
+  width: 94%;
+  border: 1px solid white;
+  border-radius: 16px;
+  box-shadow: 4px 2px 2px #e5e5e5;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.menu:nth-child(2) {
+  position: rigth;
+  margin-right: 5px;
+}
+.menu_registered {
+  display: none;
+  width: 15.7%;
+  background-image: url(../OhmyfoodImages/check.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #99E2D0;
+  background-size: 37%;
+  transform-origin: right 50%;
+  transition: transform 2000ms;
+}
+.menu:hover + .menu_registered {
+  display: block;
+}
+
+/*# sourceMappingURL=restOhmyfood.css.map */

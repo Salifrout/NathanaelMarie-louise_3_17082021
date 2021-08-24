@@ -1,0 +1,17 @@
+@import "./fragments/variables.scss";
+
+@import "./fragments/base.scss";
+
+@import "./fragments/utils.scss";
+
+@import "./fragments/layouts.scss";
+
+@import "./fragments/components.scss";
+
+@import "./fragments/home.scss";
+
+@import "./fragments/pages.scss";
+
+header div, header + div, h1, .function {
+    @extend .typography-title;
+}

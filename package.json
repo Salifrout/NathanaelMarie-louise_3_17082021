@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./scss/Ohmyfood.scss:./css/Ohmyfood.css"
+    "sass": "sass --watch ./scss/:./css/"
   },
   "repository": {
     "type": "git",
-    "url": "Ohmyfood"
+    "url": "OmF-restaurant"
   },
   "keywords": [
     "Ohmyfood",
