@@ -1,13 +1,14 @@
 a {
 	text-decoration: inherit;
 	color: inherit;
+    display: block;
 }
 
 @font-face {
     font-family: $family-content;
     src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     font-family: $family-title;
-    src: url('../fonts/shrikhand/Shrikhand-Regular.otf') format(otf);
+    src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
 
 body {
@@ -28,16 +29,16 @@ footer {
     flex-direction: column;
 }
 
-footer:nth-child(1) {
+#bogoss {
     font-family: $family-title;
 }
 
-footer:nth-child(2) {
+#bogoss2 {
     width: 49.6%;
     display: flex;
     justify-content: space-between;
     & div {
-        background-image: url(../OhmyfoodImages/couverts.png);
+        background-image: url(../../OhmyfoodImages/couverts.png);
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center;

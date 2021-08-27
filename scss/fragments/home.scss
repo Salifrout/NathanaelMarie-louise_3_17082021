@@ -6,79 +6,133 @@ header {
         margin-bottom: 18px;
     }
      + div {
-        text-align: center;
-        font-weight: bold;
-        font-family: $family-content;
+        @extend .typography-title;
         background-color: #eaeaea;
-        box-shadow: 4px 4px 4px #eaeaea insert;
+        border-top-color: #cfcfcf;
+        box-shadow: 4px 4px 4px #d5d5d5 inset;
         padding-top: 22px;
         padding-bottom: 19px;
-        background-image: url(OhmyfoodImages/local.png);
+        background-image: url(.././OhmyfoodImages/local.png);
         /*background-size: 3.5%;*/
-         background-size: 13px;
+        background-size: 13px;
         background-repeat: no-repeat;
-        background-position: right 64% bottom 50%;
+        background-position: right 66% bottom 50%;
     }
 }
 
 .hole.home {
     margin-top: 0;
     padding-top: 5px;
-    padding-bottom: 33px;
-    & button {
-        width: 58.4%;
-        margin-top: 24px auto;
-        padding-top: 24px;
-        padding-bottom: 20px;
-        text-align: center;
-        color: white;
-        border-radius: 50px;
-        background-color: $color-secondary;
+    padding-bottom: 73px;
+    text-align: center;
+    font-size: 1.3em;
+     h1 {
+        font-weight: bold;
+        margin-top: 50px;
+        /*margin-left: 17%;
+        margin-right: 13.6%;*/
+        margin-left: auto;
+        margin-right: auto;
     }
+     p {
+        font-weight: thin;
+        margin-left: 2.4%;
+        margin-right: 5.3%;
+        font-size: 1.4rem;
+        color: #4d4d4d;
+    }
+}
+
+#home_subtitle {
+    margin-left: 4%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 1.7rem;
 }
 
 .function {
     width: 86%;
-    margin: 15px auto;
+    margin: 22px auto;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    background-image: url(../../OhmyfoodImages/shop.png);
+    background-repeat: no-repeat;
+    background-size: 70px; /*17px*/
+    /*4.3%*/
+    background-position: left 20% bottom 50%;
     background-color: #f6f6f6;
-    border-radius: 18px;
+    border-radius: 24px;
+    box-shadow: 6px 6px 8px #eaeaea;
+    font-size: 1.3rem;
+    text-align: center;
+    &.mod {
+        background-color: yellow;
+    }
     &_order {
         width: 24px;
         height: 24px;
         color: white;
-        text-align: center;
-        margin-left: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -10px;
+        top: 20px;
         background-color: $color-primary;
         border-radius: 50px;
-        
+        font-size: 1rem;
     }
 }
 
-h1 {
-    margin-left: 17%;
-    margin-right: 21.6%;
-}
-
-h1 + p {
-    margin-left: 10.4%;
-    margin-right: 8.3%;
-}
-
-section {
-    width:100%;
+#home_container {
+    margin-top: 70px;
+    padding-top: 30px;
+    &_path {
+        font-weight: 800;
+        font-size: x-large;
+        margin-left: 4%;
+    }
      a {
-        /*width: 86.7%;
-        margin: 18px auto;*/
-        width: 50%;
-        height: 80px;
-        border-radius: 50px;
+        width: 86.7%;
+        
+        margin: 18px auto;
+        border: 1px solid #f6f6f6;
+        border-radius: 20px;
+        box-shadow: 4px 4px 6px #e6e6e6;
+        background-color: white;
          img {
             width: 100%;
+            height: 300px;
+            border-radius: 20px 20px 0 0;
         }
          div {
             width: 24%;
+            padding: 2px 4px;
             @extend .typography-title;
+            border-radius: 3px;
             background-color: $color-tertiary;
+            color: darken($color-tertiary, 35%);
+            position: relative;
+            left: 70%;
+            bottom: 250%;
+        }
+         span {
+            width: 80%;
+            margin-top: -20px;
+            margin-left: 5%;
+            margin-right: 15%;
+            /*margin-top: 10px;
+            margin-bottom: 10px;*/
+            display: flex;
+            justify-content: space-between;
+            background-image: url(../../OhmyfoodImages/hearts.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: right;
+             p {
+                font-size: large;
+            }
         }
     }
 }
