@@ -80,6 +80,11 @@ footer:nth-child(3) div {
   border-radius: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9d59dc);
 }
+.click:hover {
+  background: #ff7edb;
+  border: #ff7edb;
+  box-shadow: 11px 11px 9px #d5d5d5;
+}
 
 header {
   text-align: center;
@@ -224,12 +229,22 @@ header + div {
   background-size: 5%;
   background-position: right 90% bottom 50%;
 }
+.page_head a {
+  display: block;
+  width: 6%;
+  height: 30px;
+  position: absolute;
+  right: 85%;
+  top: 30px;
+}
 .page_head + img {
   z-index: 1;
   width: 100%;
 }
 
 .page_container {
+  margin-bottom: -75px;
+  padding-bottom: 110px;
   position: relative;
   left: 0;
   top: -75px;

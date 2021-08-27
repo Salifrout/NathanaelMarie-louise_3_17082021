@@ -3,13 +3,23 @@
     background-repeat: no-repeat;
     background-size: 5%;
     background-position: right 90% bottom 50%;
+     a {
+        display: block;
+        width: 6%;
+        height: 30px;
+        position: absolute;
+        right: 85%;
+        top: 30px;
+    }
      + img {
          z-index: 1;
          width: 100%;
-     }
+    }
 }
 
 .page_container {
+    margin-bottom: -75px;
+    padding-bottom: 110px;
     position: relative;
     left: 0;
     top: -75px;

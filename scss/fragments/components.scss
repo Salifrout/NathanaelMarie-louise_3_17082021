@@ -17,4 +17,9 @@
     color: white;
     border-radius: 50px;
     background: linear-gradient(to bottom right, $color-secondary, #9d59dc);
+    &:hover {
+        background: lighten($color-secondary, 1%);
+        border: lighten($color-secondary, 1%);
+    box-shadow: 11px 11px 9px #d5d5d5;
+    }
 }
