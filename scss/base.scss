@@ -4,17 +4,20 @@ a {
     display: block;
 }
 
-@font-face {
+/*@font-face {
     font-family: $family-content;
     src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     font-family: $family-title;
     src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
 
+$family-title: 'Shrikhand', cursive;
+$family-content: 'Roboto', sans-serif;
+
 body {
-    font-family: $family-content; 
+    font-family: $family-content;
     margin: 0;
-}
+}*/
 
 .hole {
     background-color: #f6f6f6;
@@ -38,7 +41,7 @@ footer {
     display: flex;
     justify-content: space-between;
     & div {
-        background-image: url(../../OhmyfoodImages/couverts.png);
+        background-image: url(./OhmyfoodImages/couverts.png);
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center;
@@ -50,7 +53,7 @@ footer:nth-child(3) {
     display: flex;
     justify-content: space-between;
     & div {
-        background-image: url(../OhmyfoodImages/hands.png);
+        background-image: url(./OhmyfoodImages/hands.png);
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center;

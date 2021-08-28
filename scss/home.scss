@@ -12,7 +12,7 @@ header {
         box-shadow: 4px 4px 4px #d5d5d5 inset;
         padding-top: 22px;
         padding-bottom: 19px;
-        background-image: url(.././OhmyfoodImages/local.png);
+        background-image: url(./OhmyfoodImages/local.png);
         /*background-size: 3.5%;*/
         background-size: 13px;
         background-repeat: no-repeat;
@@ -56,7 +56,7 @@ header {
     margin: 22px auto;
     padding-top: 5px;
     padding-bottom: 25px;
-    background-image: url(../../OhmyfoodImages/shop.png);
+    background-image: url(./OhmyfoodImages/shop.png);
     background-repeat: no-repeat;
     background-size: 70px; /*17px*/
     /*4.3%*/
@@ -95,7 +95,7 @@ header {
     }
      a {
         width: 86.7%;
-        position: relative;
+        
         margin: 18px auto;
         border: 1px solid #f6f6f6;
         border-radius: 20px;
@@ -113,9 +113,9 @@ header {
             border-radius: 3px;
             background-color: $color-tertiary;
             color: darken($color-tertiary, 35%);
-            position: absolute;
-            right: 5%;
-            bottom: 90%;
+            position: relative;
+            left: 70%;
+            bottom: 250%;
         }
          span {
             width: 80%;
@@ -126,7 +126,7 @@ header {
             margin-bottom: 10px;*/
             display: flex;
             justify-content: space-between;
-            background-image: url(../../OhmyfoodImages/hearts.png);
+            background-image: url(./OhmyfoodImages/hearts.png);
             background-repeat: no-repeat;
             background-size: 30px;
             background-position: right;
