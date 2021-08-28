@@ -79,6 +79,7 @@ footer:nth-child(3) div {
   color: white;
   border-radius: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9d59dc);
+  cursor: pointer;
 }
 .click:hover {
   background: #ff7edb;
