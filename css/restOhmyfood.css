@@ -1,4 +1,4 @@
-.typography-title, header div, h1, .function, #home_container a div, header + div, .click {
+.typography-title, header div, h1, .function, #home_container a .new, header + div, .click {
   text-align: center;
   font-weight: bold;
 }
@@ -32,33 +32,36 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-#bogoss {
+footer .box0 {
   font-family: "Shrikhand", cursive;
+}
+footer a {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 10px;
+}
+footer .box1 {
+  width: 190px;
+  background-image: url(.././OhmyfoodImages/couverts.png);
+}
+footer .box1_look {
+  display: inline-block;
+}
+footer .box2 {
+  width: 40.8%;
+  background-image: url(.././OhmyfoodImages/hands.png);
+}
+footer .box2_look {
+  display: inline-block;
 }
 
 #bogoss2 {
-  width: 49.6%;
   display: flex;
   justify-content: space-between;
-}
-#bogoss2 div {
-  background-image: url(../../OhmyfoodImages/couverts.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-}
-
-footer:nth-child(3) {
-  width: 40.8%;
-  display: flex;
-  justify-content: space-between;
-}
-footer:nth-child(3) div {
-  background-image: url(../OhmyfoodImages/hands.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
 }
 
 .click {
@@ -76,6 +79,7 @@ footer:nth-child(3) div {
   border-right-color: #9d59dc;
   box-shadow: 6px 6px 6px #d5d5d5;
   font-size: 1.2rem;
+  font-weight: 400;
   color: white;
   border-radius: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9d59dc);
@@ -144,20 +148,27 @@ header + div {
   margin: 22px auto;
   padding-top: 5px;
   padding-bottom: 25px;
-  background-image: url(../../OhmyfoodImages/shop.png);
+  background-image: url(.././OhmyfoodImages/phone.png);
   background-repeat: no-repeat;
-  background-size: 70px;
+  background-size: 15px;
   /*17px*/
   /*4.3%*/
-  background-position: left 20% bottom 50%;
+  background-position: left 10% bottom 45%;
   background-color: #f6f6f6;
   border-radius: 24px;
   box-shadow: 6px 6px 8px #eaeaea;
   font-size: 1.3rem;
   text-align: center;
 }
+.function.comp {
+  background-image: url(.././OhmyfoodImages/nav.png);
+  background-size: 25px;
+}
 .function.mod {
-  background-color: yellow;
+  background-color: #FF79DA;
+  opacity: 0.3;
+  background-image: url(.././OhmyfoodImages/shop.png);
+  background-size: 25px;
 }
 .function_order {
   width: 24px;
@@ -181,10 +192,11 @@ header + div {
 #home_container_path {
   font-weight: 800;
   font-size: x-large;
-  margin-left: 4%;
+  margin-left: 5%;
 }
 #home_container a {
   width: 86.7%;
+  position: relative;
   margin: 18px auto;
   border: 1px solid #f6f6f6;
   border-radius: 20px;
@@ -196,29 +208,41 @@ header + div {
   height: 300px;
   border-radius: 20px 20px 0 0;
 }
-#home_container a div {
+#home_container a .new {
   width: 24%;
-  padding: 2px 4px;
+  padding: 8px 0 8px 0;
   border-radius: 3px;
   background-color: #99E2D0;
   color: #2c9c81;
-  position: relative;
-  left: 70%;
-  bottom: 250%;
+  position: absolute;
+  right: 5%;
+  top: 10%;
 }
 #home_container a span {
   width: 80%;
-  margin-top: -20px;
   margin-left: 5%;
-  margin-right: 15%;
   /*margin-top: 10px;
   margin-bottom: 10px;*/
   display: flex;
   justify-content: space-between;
-  background-image: url(../../OhmyfoodImages/hearts.png);
+}
+#home_container a span .like {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 10%;
+  top: 15px;
+  background-image: url(.././OhmyfoodImages/hearts.png);
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 25px;
   background-position: right;
+}
+#home_container a span .like:hover {
+  background-image: url(.././OhmyfoodImages/hearty.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right;
+  transition: 200ms;
 }
 #home_container a span p {
   font-size: large;
@@ -233,7 +257,7 @@ header + div {
 .page_head a {
   display: block;
   width: 6%;
-  height: 30px;
+  height: 60px;
   position: absolute;
   right: 85%;
   top: 30px;
@@ -245,14 +269,14 @@ header + div {
 
 .page_container {
   margin-bottom: -75px;
-  padding-bottom: 110px;
+  padding-bottom: 80px;
   position: relative;
   left: 0;
   top: -75px;
   z-index: 2;
   padding-top: 20px;
   border-radius: 24px 24px 0 0;
-  background-image: url(../OhmyfoodImages/hearts.png);
+  background-image: url(../OhmyfoodImages/hearto.png);
   background-repeat: no-repeat;
   background-size: 28px;
   background-position: right 10% top 45px;
@@ -260,6 +284,13 @@ header + div {
 }
 .page_container h1 {
   font-family: "Shrikhand", cursive;
+  /*position: relative;
+  right: 20%;*/
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 19px;
+  font-weight: 900;
+  font-size: xx-large;
 }
 .page_container h2 {
   font-weight: 100;
@@ -272,8 +303,10 @@ header + div {
   text-underline-position: under;
   padding-bottom: 4px;
 }
-
-.menu {
+.page_container .click.select {
+  margin-top: 60px;
+}
+.page_container .menu {
   width: 94%;
   margin-bottom: 15px;
   margin-left: auto;
@@ -284,24 +317,36 @@ header + div {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
-.menu p {
-  margin-left: 3%;
+.page_container .menu:hover .page_container .menu:nth-child(2) {
+  transform: translateX(-250px);
 }
-.menu_registered {
-  opacity: 1;
+.page_container .menu:nth-child(2) {
+  transition: transform 2000ms;
+}
+.page_container .menu:hover .page_container .menu_registered {
+  /*transform:translateX(15.7%);*/
+  transform: translateX(100%);
+}
+.page_container .menu_registered {
+  display: block;
   width: 15.7%;
-  background-image: url(../../OhmyfoodImages/check.png);
+  margin-right: -0.1%;
+  margin-top: -0.1%;
+  margin-bottom: -0.1%;
+  background-image: url(../OhmyfoodImages/check.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #99E2D0;
   background-size: 37%;
-  transform-origin: right 50%;
+  border-radius: 0 16px 16px 0;
+  transform: translateX(-100%);
+  /*transform-origin: right 50%;*/
   transition: transform 2000ms;
 }
-.menu:hover + .menu_registered {
-  opacity: 1;
-  transform: translateX(15.7%);
+.page_container .menu p {
+  margin-left: 3%;
 }
 
 /*# sourceMappingURL=restOhmyfood.css.map */

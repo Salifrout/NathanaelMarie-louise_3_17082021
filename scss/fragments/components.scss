@@ -14,6 +14,7 @@
     box-shadow: 6px 6px 6px #d5d5d5;
     @extend .typography-title;
     font-size: 1.2rem;
+    font-weight: 400;
     color: white;
     border-radius: 50px;
     background: linear-gradient(to bottom right, $color-secondary, #9d59dc);

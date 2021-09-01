@@ -56,18 +56,25 @@ header {
     margin: 22px auto;
     padding-top: 5px;
     padding-bottom: 25px;
-    background-image: url(../../OhmyfoodImages/shop.png);
+    background-image: url(.././OhmyfoodImages/phone.png);
     background-repeat: no-repeat;
-    background-size: 70px; /*17px*/
+    background-size: 15px; /*17px*/
     /*4.3%*/
-    background-position: left 20% bottom 50%;
+    background-position: left 10% bottom 45%;
     background-color: #f6f6f6;
     border-radius: 24px;
     box-shadow: 6px 6px 8px #eaeaea;
     font-size: 1.3rem;
     text-align: center;
+    &.comp {
+        background-image: url(.././OhmyfoodImages/nav.png);
+        background-size: 25px;
+    }
     &.mod {
-        background-color: yellow;
+        background-color: $color-secondary;
+        opacity: 0.3;
+        background-image: url(.././OhmyfoodImages/shop.png);
+        background-size: 25px;
     }
     &_order {
         width: 24px;
@@ -91,11 +98,11 @@ header {
     &_path {
         font-weight: 800;
         font-size: x-large;
-        margin-left: 4%;
+        margin-left: 5%;
     }
      a {
         width: 86.7%;
-        
+        position: relative;
         margin: 18px auto;
         border: 1px solid #f6f6f6;
         border-radius: 20px;
@@ -106,31 +113,43 @@ header {
             height: 300px;
             border-radius: 20px 20px 0 0;
         }
-         div {
+         .new {
             width: 24%;
-            padding: 2px 4px;
+            padding:  8px 0 8px 0;
             @extend .typography-title;
             border-radius: 3px;
             background-color: $color-tertiary;
             color: darken($color-tertiary, 35%);
-            position: relative;
-            left: 70%;
-            bottom: 250%;
+            position: absolute;
+            right: 5%;
+            top: 10%;
         }
          span {
             width: 80%;
-            margin-top: -20px;
             margin-left: 5%;
-            margin-right: 15%;
             /*margin-top: 10px;
             margin-bottom: 10px;*/
             display: flex;
             justify-content: space-between;
-            background-image: url(../../OhmyfoodImages/hearts.png);
-            background-repeat: no-repeat;
-            background-size: 30px;
-            background-position: right;
-             p {
+             .like {
+                width: 25px;
+                height: 25px;
+                position: relative;
+                left: 10%;
+                top: 15px;
+                background-image: url(.././OhmyfoodImages/hearts.png);
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: right;
+                &:hover {
+                    background-image: url(.././OhmyfoodImages/hearty.png);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    background-position: right;
+                    transition: 200ms;
+                }        
+            }
+            p {
                 font-size: large;
             }
         }

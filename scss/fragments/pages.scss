@@ -6,7 +6,7 @@
      a {
         display: block;
         width: 6%;
-        height: 30px;
+        height: 60px;
         position: absolute;
         right: 85%;
         top: 30px;
@@ -19,20 +19,27 @@
 
 .page_container {
     margin-bottom: -75px;
-    padding-bottom: 110px;
+    padding-bottom: 80px;
     position: relative;
     left: 0;
     top: -75px;
     z-index: 2;
     padding-top: 20px;
     border-radius: 24px 24px 0 0;
-    background-image: url(../OhmyfoodImages/hearts.png);
+    background-image: url(../OhmyfoodImages/hearto.png);
     background-repeat: no-repeat;
     background-size: 28px;
     background-position: right 10% top 45px;
     border-radius: 50px 50px 0 0;
      h1 {
-         font-family: $family-title;
+        font-family: $family-title;
+        /*position: relative;
+        right: 20%;*/
+        text-align: left;
+        margin-top: 15px;
+        padding-left: 19px;
+        font-weight: 900;
+        font-size: xx-large;
     }
      h2 {
         font-weight: 100;
@@ -45,35 +52,49 @@
         text-underline-position: under;
         padding-bottom: 4px; 
     }
-}
-
-.menu {
-    width: 94%;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid white;
-    border-radius: 16px;
-    box-shadow: 4px 4px 4px #e5e5e5;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-     p {
+     .click.select {
+         margin-top: 60px;
+    }
+     .menu {
+        width: 94%;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid white;
+        border-radius: 16px;
+        box-shadow: 4px 4px 4px #e5e5e5;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        &:hover &:nth-child(2) {
+            transform: translateX(-250px);
+        }
+        &:nth-child(2) {
+            transition: transform 2000ms;
+        }
+        &:hover &_registered {
+            /*transform:translateX(15.7%);*/
+            transform: translateX(100%);
+        }
+        &_registered {
+            display: block;
+            width: 15.7%;
+            margin-right: -0.1%;
+            margin-top: -0.1%;
+            margin-bottom: -0.1%;
+            background-image: url(../OhmyfoodImages/check.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $color-tertiary;
+            background-size: 37%;
+            border-radius: 0 16px 16px 0;
+            transform: translateX(-100%);
+            /*transform-origin: right 50%;*/
+            transition: transform 2000ms;
+        }
+        p {
         margin-left: 3%;
-    }
-    &_registered {
-        opacity: 1;
-        width: 15.7%;
-        background-image: url(../../OhmyfoodImages/check.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: $color-tertiary;
-        background-size: 37%;
-        transform-origin: right 50%;
-        transition: transform 2000ms;
-    }
-    &:hover + &_registered {
-        opacity: 1;
-        transform:translateX(15.7%) ;
+        }
     }
 }
