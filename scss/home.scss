@@ -12,7 +12,7 @@ header {
         box-shadow: 4px 4px 4px #d5d5d5 inset;
         padding-top: 22px;
         padding-bottom: 19px;
-        background-image: url(.././OhmyfoodImages/local.png);
+        background-image: url(../scss/OhmyfoodImages/local.png);
         /*background-size: 3.5%;*/
         background-size: 13px;
         background-repeat: no-repeat;
@@ -56,18 +56,24 @@ header {
     margin: 22px auto;
     padding-top: 5px;
     padding-bottom: 25px;
-    background-image: url(../../OhmyfoodImages/shop.png);
+    background-image: url(../scss/OhmyfoodImages/phone.png);
     background-repeat: no-repeat;
-    background-size: 70px; /*17px*/
+    background-size: 18px; /*17px*/
     /*4.3%*/
-    background-position: left 20% bottom 50%;
+    background-position: left 12% bottom 48%;
     background-color: #f6f6f6;
     border-radius: 24px;
     box-shadow: 6px 6px 8px #eaeaea;
     font-size: 1.3rem;
     text-align: center;
+    &.comp {
+        background-image: url(../scss/OhmyfoodImages/nav.png);
+        background-size: 25px;
+    }
     &.mod {
-        background-color: yellow;
+        background-color: #f5edff;
+        background-image: url(../scss/OhmyfoodImages/shop.png);
+        background-size: 25px;
     }
     &_order {
         width: 24px;
@@ -95,7 +101,7 @@ header {
     }
      a {
         width: 86.7%;
-        
+        position: relative;
         margin: 18px auto;
         border: 1px solid #f6f6f6;
         border-radius: 20px;
@@ -108,25 +114,25 @@ header {
         }
          div {
             width: 24%;
-            padding: 2px 4px;
+            padding: 8px 0;
             @extend .typography-title;
             border-radius: 3px;
             background-color: $color-tertiary;
             color: darken($color-tertiary, 35%);
-            position: relative;
-            left: 70%;
-            bottom: 250%;
+            position: absolute;
+            right: 3%;
+            top: 7%;
         }
          span {
             width: 80%;
-            margin-top: -20px;
+            margin-top: -10px;
             margin-left: 5%;
             margin-right: 15%;
             /*margin-top: 10px;
             margin-bottom: 10px;*/
             display: flex;
             justify-content: space-between;
-            background-image: url(../../OhmyfoodImages/hearts.png);
+            background-image: url(../scss/OhmyfoodImages/hearts.png);
             background-repeat: no-repeat;
             background-size: 30px;
             background-position: right;

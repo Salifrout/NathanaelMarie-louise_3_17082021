@@ -27,32 +27,36 @@ footer {
     background-color: #353535;
     display: flex;
     flex-direction: column;
-}
-
-#bogoss {
-    font-family: $family-title;
-}
-
-#bogoss2 {
-    width: 49.6%;
-    display: flex;
-    justify-content: space-between;
-    & div {
-        background-image: url(../../OhmyfoodImages/couverts.png);
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: center;
+     .box0 {
+        font-family: $family-title;
+        margin-bottom: 24px;
     }
-}
-
-footer:nth-child(3) {
-    width: 40.8%;
-    display: flex;
-    justify-content: space-between;
-    & div {
-        background-image: url(../OhmyfoodImages/hands.png);
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: center;
+     a {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        span {
+            display: inline-block;
+            width: 13px;
+            /*height: 15px;*/
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .box1 {
+        width: 190px;
+        span {
+            background-image: url(../scss/OhmyfoodImages/couverts.png);
+        }
+    }    
+    .box2 {
+        width: 160px;
+        span {
+           background-image: url(../scss/OhmyfoodImages/hands.png); 
+        }
     }
 }
