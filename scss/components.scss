@@ -17,6 +17,10 @@
     color: white;
     border-radius: 50px;
     background: linear-gradient(to bottom right, $color-secondary, #9d59dc);
+    cursor: pointer;
+    &.special {
+        margin-top: 60px;
+    }
     &:hover {
         background: lighten($color-secondary, 0.1%);
         border: lighten($color-secondary, 0.1%);

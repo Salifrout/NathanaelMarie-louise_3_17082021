@@ -1,0 +1,9 @@
+translate pages menus
+coeur se remplit
+hover ne fonctionne pas
+shrikhand
+
+
+
+loading spinner
+chargement différé entrée plat et dessert
