@@ -64,7 +64,7 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-     p {
+    p {
         margin-left: 3%;
     }
     &_registered {
@@ -82,7 +82,7 @@
         transform-origin: right 50%;
         transition: transform 2000ms;
     }
-    &:hover + &_registered {
+    &:hover &_registered {
         opacity: 1;
         transform:translateX(15.7%) ;
     }
