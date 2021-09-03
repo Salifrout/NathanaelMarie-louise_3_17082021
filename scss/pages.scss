@@ -68,11 +68,14 @@
         margin-left: 3%;
     }
     &_registered {
-        opacity: 1;
+        opacity: 0.7;
+        display: none;
         width: 15.7%;
         margin-top: -0.5%;
         margin-bottom: -0.5%;
         margin-right: -0.5%;
+        position: relative;
+        left: 15.7;
         background-image: url(../scss/OhmyfoodImages/check.png);
         border-radius: 0 16px 16px 0;
         background-position: center;
@@ -83,7 +86,8 @@
         transition: transform 2000ms;
     }
     &:hover &_registered {
-        opacity: 1;
+        opacity: 0.7;
+        display: block;
         transform:translateX(15.7%) ;
     }
 }
