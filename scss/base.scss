@@ -5,18 +5,19 @@ a {
 }
 
 @font-face {
-    font-family: Roboto;
+    font-family: $family-content;
     src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 @font-face {
-    font-family: Shrikhand;
+    font-family: $family-title;
     src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 }
 
 body {
     font-family: $family-content; 
     margin: 0;
+    z-index: 1;
 }
 
 .hole {

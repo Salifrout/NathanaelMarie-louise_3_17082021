@@ -94,12 +94,13 @@ header {
 #home_container {
     margin-top: 70px;
     padding-top: 30px;
+    padding-bottom: 60px;
     &_path {
         font-weight: 800;
         font-size: x-large;
         margin-left: 4%;
     }
-     a {
+    a {
         width: 86.7%;
         position: relative;
         margin: 18px auto;
@@ -107,7 +108,7 @@ header {
         border-radius: 20px;
         box-shadow: 4px 4px 6px #e6e6e6;
         background-color: white;
-        &:hover .tolike {
+        &:hover .favori_plein {
             animation-name: grow-tolike;
             animation-duration: 4s;
         }
@@ -136,35 +137,47 @@ header {
             margin-bottom: 10px;*/
             display: flex;
             justify-content: space-between;
-            background-image: url(../scss/OhmyfoodImages/hearts.png);
+            /*background-image: url(../scss/OhmyfoodImages/hearts.png);
             background-repeat: no-repeat;
             background-size: 30px;
-            background-position: right;
+            background-position: right;*/
             p {
                 font-size: large;
             }
         }
-        .tolike {
-            width: 30px;
-            height: 0px;
-            opacity: 0.8;
-            position: absolute;
-            right: 15%;
-            bottom: 23px;
-            background-color: #fff;
-            background-image: url(../scss/OhmyfoodImages/lovey.png);
+        [class*=favori_] {
+            width: 100%;   
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: bottom;
+        }
+        .favori {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 15%;
+            bottom: 23px;
+            &_vide {
+            background-image: url(../scss/OhmyfoodImages/hearts.png);
+            height: 100%;
+            z-index: 1;
+            }
+            &_plein {
+                position: relative;
+                top: -31px;
+                background-image: url(../scss/OhmyfoodImages/lovey.png);
+                height: 0%;
+                z-index: 2;
+            }
         }
     }
 }
 
 @keyframes grow-tolike {
     from {
-        height: 0px;
+        height: 100%;
     }
-    20% {
+    /*20% {
         height: 5px;
     }
     40% {
@@ -175,8 +188,8 @@ header {
     }
     80% {
         height: 25px;
-    }
+    }*/
     to {
-        height: 30px;
+        height: 0%;
     }
 }

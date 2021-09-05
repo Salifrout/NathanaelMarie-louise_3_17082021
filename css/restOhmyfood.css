@@ -10,16 +10,17 @@ a {
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 }
 @font-face {
-  font-family: Shrikhand;
+  font-family: "Shrikhand", cursive;
   src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  z-index: 1;
 }
 
 .hole {
@@ -192,6 +193,7 @@ header + div {
 #home_container {
   margin-top: 70px;
   padding-top: 30px;
+  padding-bottom: 60px;
 }
 #home_container_path {
   font-weight: 800;
@@ -207,7 +209,7 @@ header + div {
   box-shadow: 4px 4px 6px #e6e6e6;
   background-color: white;
 }
-#home_container a:hover .tolike {
+#home_container a:hover .favori_plein {
   animation-name: grow-tolike;
   animation-duration: 4s;
 }
@@ -235,46 +237,58 @@ header + div {
   margin-bottom: 10px;*/
   display: flex;
   justify-content: space-between;
-  background-image: url(../scss/OhmyfoodImages/hearts.png);
+  /*background-image: url(../scss/OhmyfoodImages/hearts.png);
   background-repeat: no-repeat;
   background-size: 30px;
-  background-position: right;
+  background-position: right;*/
 }
 #home_container a span p {
   font-size: large;
 }
-#home_container a .tolike {
-  width: 30px;
-  height: 0px;
-  opacity: 0.8;
-  position: absolute;
-  right: 15%;
-  bottom: 23px;
-  background-color: #fff;
-  background-image: url(../scss/OhmyfoodImages/lovey.png);
+#home_container a [class*=favori_] {
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
 }
+#home_container a .favori {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15%;
+  bottom: 23px;
+}
+#home_container a .favori_vide {
+  background-image: url(../scss/OhmyfoodImages/hearts.png);
+  height: 100%;
+  z-index: 1;
+}
+#home_container a .favori_plein {
+  position: relative;
+  top: -31px;
+  background-image: url(../scss/OhmyfoodImages/lovey.png);
+  height: 0%;
+  z-index: 2;
+}
 
 @keyframes grow-tolike {
   from {
-    height: 0px;
+    height: 0%;
   }
-  20% {
-    height: 5px;
+  /*20% {
+      height: 5px;
   }
   40% {
-    height: 10px;
+      height: 10px;
   }
   60% {
-    height: 20px;
+      height: 20px;
   }
   80% {
-    height: 25px;
-  }
+      height: 25px;
+  }*/
   to {
-    height: 30px;
+    height: 100%;
   }
 }
 .page_head a {
