@@ -109,8 +109,9 @@ header {
         box-shadow: 4px 4px 6px #e6e6e6;
         background-color: white;
         &:hover .favori_plein {
-            animation-name: grow-tolike;
-            animation-duration: 4s;
+            /*animation-name: grow-tolike;
+            animation-duration: 4s;*/
+            height: 100%;
         }
         img {
             width: 100%;
@@ -145,12 +146,12 @@ header {
                 font-size: large;
             }
         }
-        [class*=favori_] {
+        /*[class*=favori_] {
             width: 100%;   
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: bottom;
-        }
+        }*/
         .favori {
             width: 30px;
             height: 30px;
@@ -159,25 +160,34 @@ header {
             bottom: 23px;
             &_vide {
             background-image: url(../scss/OhmyfoodImages/hearts.png);
+            width: 100%;   
+            background-repeat: no-repeat;
+            background-size: 100%;
             height: 100%;
             z-index: 1;
             }
             &_plein {
                 position: relative;
-                top: -31px;
+                bottom: 30px;
                 background-image: url(../scss/OhmyfoodImages/lovey.png);
+                background-position: top;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 100%;   
                 height: 0%;
                 z-index: 2;
+                transition: height 2s ease-in-out;
             }
         }
     }
 }
 
-@keyframes grow-tolike {
+/*@keyframes grow-tolike {
     from {
         height: 100%;
     }
-    /*20% {
+    20% {
         height: 5px;
     }
     40% {
@@ -188,8 +198,8 @@ header {
     }
     80% {
         height: 25px;
-    }*/
+    }
     to {
         height: 0%;
     }
-}
+}*/

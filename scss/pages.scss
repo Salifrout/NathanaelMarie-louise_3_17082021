@@ -55,6 +55,7 @@
 
 .menu {
     width: 94%;
+    height: 65px;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -64,30 +65,43 @@
     background-color: white;
     /*display: flex;*/
     justify-content: space-between;
+    position: relative;
+    cursor: pointer;
     p {
         margin-left: 3%;
     }
+    .price {
+        position: absolute;
+        right: 3%;
+        top: 0;
+        transition: transform 600ms ease-out;
+    }
     &_registered {
-        opacity: 0.7;
-        overflow: hidden;
-        width: 15.7%;
+        opacity: 0.4;
+        /*overflow: hidden;*/
+        width: 64px;
+        height: 65px;
         margin-top: -0.5%;
-        margin-bottom: -0.5%;
-        margin-right: -0.5%;
+        /*margin-bottom: -0.5%;
+        margin-right: -0.5%;*/
         position: relative;
-        left: 65.7%;
+        left: 100%;
+        bottom: 63px;
         background-image: url(../scss/OhmyfoodImages/check.png);
         border-radius: 0 16px 16px 0;
         background-position: center;
         background-repeat: no-repeat;
         background-color: $color-tertiary;
         background-size: 37%;
-        transform-origin: right 50%;
-        transition: transform 2000ms;
+        /*transform-origin: right 50%;*/
+        transition: transform 600ms ease-out;
+    }
+    &:hover .price {
+        transform: translateX(-76px);
     }
     &:hover &_registered {
-        opacity: 0.7;
+        opacity: 0.4;
         overflow: visible;
-        transform:translateX(15.7%) ;
+        transform:translateX(-64px);
     }
 }
