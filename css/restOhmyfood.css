@@ -354,7 +354,7 @@ header + div {
 }
 
 .menu {
-  width: 94%;
+  width: 410px;
   height: 65px;
   margin-bottom: 15px;
   margin-left: auto;
@@ -378,11 +378,11 @@ header + div {
   transition: transform 600ms ease-out;
 }
 .menu_registered {
-  opacity: 0.4;
-  /*overflow: hidden;*/
-  width: 64px;
+  /*opacity: 0.4;*/
+  width: 65px;
   height: 65px;
-  margin-top: -0.5%;
+  overflow: hidden;
+  margin-top: -5px;
   /*margin-bottom: -0.5%;
   margin-right: -0.5%;*/
   position: relative;
@@ -401,7 +401,7 @@ header + div {
   transform: translateX(-76px);
 }
 .menu:hover .menu_registered {
-  opacity: 0.4;
+  /*opacity: 0.4;*/
   overflow: visible;
   transform: translateX(-64px);
 }
