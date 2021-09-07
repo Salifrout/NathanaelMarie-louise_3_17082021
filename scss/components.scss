@@ -15,8 +15,8 @@
     @extend .typography-title;
     font-size: 1.2rem;
     color: white;
-    border-radius: 50px;
-    background: linear-gradient(to bottom right, $color-secondary, #9d59dc);
+    border-radius: 50px;   /*#9d59dc*/
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     cursor: pointer;
     &.special {
         margin-top: 60px;

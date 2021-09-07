@@ -71,6 +71,12 @@
     p {
         margin-left: 3%;
     }
+    &_formula {
+        width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .price {
         position: absolute;
         right: 3%;
@@ -98,12 +104,14 @@
     }
     &:hover {
         overflow: visible;
-    }
-    &:hover .price {
+        .price {
         transform: translateX(-76px);
+        }
+    }
+    &:hover &_formula {
+        width: 60%;
     }
     &:hover &_registered {
-        /*opacity: 0.4;*/
         transform:translateX(-64px);
     }
 }

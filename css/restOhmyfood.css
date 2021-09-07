@@ -85,7 +85,8 @@ footer .box2 span {
   font-size: 1.2rem;
   color: white;
   border-radius: 50px;
-  background: linear-gradient(to bottom right, #FF79DA, #9d59dc);
+  /*#9d59dc*/
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   cursor: pointer;
 }
 .click.special {
@@ -104,7 +105,7 @@ footer .box2 span {
   background-size: cover;
   z-index: 4;
   position: fixed;
-  animation: vanished 1ms 3400ms forwards;
+  animation: vanished 1ms 3700ms forwards;
 }
 #loading-page_spinner {
   width: 80%;
@@ -431,6 +432,12 @@ header + div {
 .menu p {
   margin-left: 3%;
 }
+.menu_formula {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu .price {
   position: absolute;
   right: 3%;
@@ -462,8 +469,10 @@ header + div {
 .menu:hover .price {
   transform: translateX(-76px);
 }
+.menu:hover .menu_formula {
+  width: 60%;
+}
 .menu:hover .menu_registered {
-  /*opacity: 0.4;*/
   transform: translateX(-64px);
 }
 
