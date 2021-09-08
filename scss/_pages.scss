@@ -103,7 +103,6 @@
         transition: transform 600ms ease-out;
     }
     &:hover {
-        overflow: visible;
         .price {
         transform: translateX(-76px);
         }

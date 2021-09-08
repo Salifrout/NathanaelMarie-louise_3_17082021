@@ -460,9 +460,6 @@ header + div {
   /*transform-origin: right 50%;*/
   transition: transform 600ms ease-out;
 }
-.menu:hover {
-  overflow: visible;
-}
 .menu:hover .price {
   transform: translateX(-76px);
 }

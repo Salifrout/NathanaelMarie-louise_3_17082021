@@ -1,16 +1,16 @@
-@import "variables.scss";
+@import "_variables.scss";
 
-@import "base.scss";
+@import "_base.scss";
 
-@import "utils.scss";
+@import "_utils.scss";
 
-@import "layouts.scss";
+@import "_layouts.scss";
 
-@import "components.scss";
+@import "_components.scss";
 
-@import "home.scss";
+@import "_home.scss";
 
-@import "pages.scss";
+@import "_pages.scss";
 
 header div, header + div, h1, .function {
     @extend .typography-title;
