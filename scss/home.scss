@@ -17,10 +17,9 @@
         z-index: 5;
         &_growing {
             margin: 5px;
-            transform: scaleX(0);
             height: 15px;
             background: linear-gradient(to right, $color-secondary, $color-primary);
-            animation: loader 2800ms 200ms forwards;
+            animation: loader 2800ms 200ms both;
             animation-timing-function: cubic-bezier(0,.58,.91,-0.03);
             transform-origin: left;
             z-index: 6;
@@ -98,7 +97,7 @@ header {
         margin-right: auto;
     }
      p {
-        font-weight: thin;
+        font-weight: 100;
         margin-left: 2.4%;
         margin-right: 5.3%;
         font-size: 1.4rem;
@@ -171,11 +170,11 @@ header {
         border-radius: 20px;
         box-shadow: 4px 4px 6px #e6e6e6;
         background-color: white;
-        &:hover .favori_plein {
+        /*&:hover .favori#plein {
             /*animation-name: grow-tolike;
-            animation-duration: 4s;*/
+            animation-duration: 4s;
             height: 100%;
-        }
+        }*/
         img {
             width: 100%;
             height: 300px;
@@ -192,20 +191,14 @@ header {
             right: 3%;
             top: 7%;
         }
-        span {
+        p {
             width: 80%;
-            margin-top: -10px;
+            /*margin-top: -10px;*/
             margin-left: 5%;
             margin-right: 15%;
-            /*margin-top: 10px;
-            margin-bottom: 10px;*/
             display: flex;
             justify-content: space-between;
-            /*background-image: url(../scss/OhmyfoodImages/hearts.png);
-            background-repeat: no-repeat;
-            background-size: 30px;
-            background-position: right;*/
-            p {
+            span {
                 font-size: large;
             }
         }
@@ -220,18 +213,21 @@ header {
             height: 30px;
             position: absolute;
             right: 15%;
-            bottom: 23px;
-            &_vide {
-            background-image: url(../scss/OhmyfoodImages/hearts.png);
-            width: 100%;   
-            background-repeat: no-repeat;
-            background-size: 100%;
-            height: 100%;
-            z-index: 2;
+            bottom: 12px;
+            &:hover #plein {
+                    height: 100%;
+                }
+            &#vide {
+                background-image: url(../scss/OhmyfoodImages/hearts.png);
+                width: 100%;   
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 100%;
+                z-index: 2;   
             }
-            &_plein {
+            &#plein {
                 position: relative;
-                bottom: 30px;
+                bottom: 12px;
                 background-image: url(../scss/OhmyfoodImages/lovey.png);
                 background-position: top;
                 background-color: #fff;

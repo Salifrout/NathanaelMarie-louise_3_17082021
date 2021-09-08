@@ -115,3 +115,28 @@
         transform:translateX(-64px);
     }
 }
+
+.first_entrance, .second_entrance, .third_entrance {
+    animation: appearance, 2s, both;
+}
+
+.first_entrance {
+    animation-delay: 1s;
+}
+
+.second_entrance {
+    animation-delay: 3.5s;
+}
+
+.third_entrance {
+    animation-delay: 6s;
+}
+
+@keyframes appearance {
+    from {
+        transform: translateX(-9999px);
+    }
+    to {
+        transform: translateX(9999px);
+    }
+}

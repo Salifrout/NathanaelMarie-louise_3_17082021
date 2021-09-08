@@ -38,6 +38,7 @@ footer {
 footer .box0 {
   font-family: "Shrikhand", cursive;
   margin-bottom: 24px;
+  font-size: x-large;
 }
 footer a {
   display: flex;
@@ -82,7 +83,7 @@ footer .box2 span {
   border-bottom-color: #9d59dc;
   border-right-color: #9d59dc;
   box-shadow: 6px 6px 6px #d5d5d5;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   border-radius: 50px;
   /*#9d59dc*/
@@ -119,10 +120,9 @@ footer .box2 span {
 }
 #loading-page_spinner_growing {
   margin: 5px;
-  transform: scaleX(0);
   height: 15px;
   background: linear-gradient(to right, #FF79DA, #9356DC);
-  animation: loader 2800ms 200ms forwards;
+  animation: loader 2800ms 200ms both;
   animation-timing-function: cubic-bezier(0, 0.58, 0.91, -0.03);
   transform-origin: left;
   z-index: 6;
@@ -194,7 +194,7 @@ header + div {
   margin-right: auto;
 }
 .hole.home p {
-  font-weight: thin;
+  font-weight: 100;
   margin-left: 2.4%;
   margin-right: 5.3%;
   font-size: 1.4rem;
@@ -268,17 +268,17 @@ header + div {
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
   background-color: white;
+  /*&:hover .favori#plein {
+      /*animation-name: grow-tolike;
+      animation-duration: 4s;
+      height: 100%;
+  }*/
   /*[class*=favori_] {
       width: 100%;   
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: bottom;
   }*/
-}
-#home_container a:hover .favori_plein {
-  /*animation-name: grow-tolike;
-  animation-duration: 4s;*/
-  height: 100%;
 }
 #home_container a img {
   width: 100%;
@@ -295,21 +295,15 @@ header + div {
   right: 3%;
   top: 7%;
 }
-#home_container a span {
+#home_container a p {
   width: 80%;
-  margin-top: -10px;
+  /*margin-top: -10px;*/
   margin-left: 5%;
   margin-right: 15%;
-  /*margin-top: 10px;
-  margin-bottom: 10px;*/
   display: flex;
   justify-content: space-between;
-  /*background-image: url(../scss/OhmyfoodImages/hearts.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right;*/
 }
-#home_container a span p {
+#home_container a p span {
   font-size: large;
 }
 #home_container a .favori {
@@ -317,9 +311,12 @@ header + div {
   height: 30px;
   position: absolute;
   right: 15%;
-  bottom: 23px;
+  bottom: 12px;
 }
-#home_container a .favori_vide {
+#home_container a .favori:hover #plein {
+  height: 100%;
+}
+#home_container a .favori#vide {
   background-image: url(../scss/OhmyfoodImages/hearts.png);
   width: 100%;
   background-repeat: no-repeat;
@@ -327,9 +324,9 @@ header + div {
   height: 100%;
   z-index: 2;
 }
-#home_container a .favori_plein {
+#home_container a .favori#plein {
   position: relative;
-  bottom: 30px;
+  bottom: 12px;
   background-image: url(../scss/OhmyfoodImages/lovey.png);
   background-position: top;
   background-color: #fff;
@@ -474,6 +471,31 @@ header + div {
 }
 .menu:hover .menu_registered {
   transform: translateX(-64px);
+}
+
+.first_entrance, .second_entrance, .third_entrance {
+  animation: appearance, 2s, both;
+}
+
+.first_entrance {
+  animation-delay: 1s;
+}
+
+.second_entrance {
+  animation-delay: 3.5s;
+}
+
+.third_entrance {
+  animation-delay: 6s;
+}
+
+@keyframes appearance {
+  from {
+    transform: translateX(-9999px);
+  }
+  to {
+    transform: translateX(9999px);
+  }
 }
 
 /*# sourceMappingURL=restOhmyfood.css.map */
