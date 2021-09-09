@@ -4,16 +4,6 @@ a {
     display: block;
 }
 
-@font-face {
-    font-family: $family-content;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-}
-
-@font-face {
-    font-family: $family-title;
-    src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-}
-
 body {
     font-family: $family-content; 
     margin: 0;
@@ -43,7 +33,6 @@ footer {
         span {
             display: inline-block;
             width: 13px;
-            /*height: 15px;*/
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;

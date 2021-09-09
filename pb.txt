@@ -1,9 +1,18 @@
-translate pages menus
-coeur se remplit
-hover ne fonctionne pas
-shrikhand
+translate pages menus +
+coeur se remplit +
+hover ne fonctionne pas +
+shrikhand +
 
 
 
-loading spinner
-chargement différé entrée plat et dessert
+loading spinner +
+chargement différé entrée plat et dessert +
+w3c nettoyage
+coeur menu +
+changer nom dossier
+
+
+coeur dans PE + media querrie (max et min height) !!!
+
+
+pas compris pp des pages canoniques (dupliquées)

@@ -10,7 +10,6 @@
         width: 80%;
         height: 25px;
         background-color: #fff;
-        /*border: 5px #fff solid;*/
         position: fixed;
         left: 10%;
         top: 45%;
@@ -35,16 +34,6 @@
         transform: scaleX(1);
     }
 }
-
-/*@keyframes disappear {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        display: none;
-    }
-}*/
 
 @keyframes vanished {
     from {
@@ -75,7 +64,6 @@ header {
         padding-top: 22px;
         padding-bottom: 19px;
         background-image: url(../scss/OhmyfoodImages/local.png);
-        /*background-size: 3.5%;*/
         background-size: 13px;
         background-repeat: no-repeat;
         background-position: right 66% bottom 50%;
@@ -91,8 +79,6 @@ header {
      h1 {
         font-weight: bold;
         margin-top: 50px;
-        /*margin-left: 17%;
-        margin-right: 13.6%;*/
         margin-left: auto;
         margin-right: auto;
     }
@@ -120,8 +106,7 @@ header {
     padding-bottom: 25px;
     background-image: url(../scss/OhmyfoodImages/phone.png);
     background-repeat: no-repeat;
-    background-size: 18px; /*17px*/
-    /*4.3%*/
+    background-size: 18px;
     background-position: left 12% bottom 48%;
     background-color: #f6f6f6;
     border-radius: 24px;
@@ -164,17 +149,13 @@ header {
     }
     a {
         width: 86.7%;
+        max-width: 700px;
         position: relative;
         margin: 18px auto;
         border: 1px solid #f6f6f6;
         border-radius: 20px;
         box-shadow: 4px 4px 6px #e6e6e6;
         background-color: white;
-        /*&:hover .favori#plein {
-            /*animation-name: grow-tolike;
-            animation-duration: 4s;
-            height: 100%;
-        }*/
         img {
             width: 100%;
             height: 300px;
@@ -193,7 +174,6 @@ header {
         }
         p {
             width: 80%;
-            /*margin-top: -10px;*/
             margin-left: 5%;
             margin-right: 15%;
             display: flex;
@@ -202,12 +182,6 @@ header {
                 font-size: large;
             }
         }
-        /*[class*=favori_] {
-            width: 100%;   
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: bottom;
-        }*/
         .favori {
             width: 30px;
             height: 30px;
@@ -241,24 +215,3 @@ header {
         }
     }
 }
-
-/*@keyframes grow-tolike {
-    from {
-        height: 100%;
-    }
-    20% {
-        height: 5px;
-    }
-    40% {
-        height: 10px;
-    }
-    60% {
-        height: 20px;
-    }
-    80% {
-        height: 25px;
-    }
-    to {
-        height: 0%;
-    }
-}*/
