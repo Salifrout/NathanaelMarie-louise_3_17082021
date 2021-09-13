@@ -21,7 +21,6 @@
             animation: loader 2800ms 200ms both;
             animation-timing-function: cubic-bezier(0,.58,.91,-0.03);
             transform-origin: left;
-            z-index: 6;
         }
     }
 }
@@ -215,3 +214,18 @@ header {
         }
     }
 }
+
+@media (min-width: 1550px) {
+    #home_container {
+        a {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        &_noticed {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
