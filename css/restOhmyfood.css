@@ -275,10 +275,10 @@ header + div {
   right: 15%;
   bottom: 12px;
 }
-#home_container a .favori:hover #plein {
+#home_container a .favori:hover [id*=plein] {
   height: 100%;
 }
-#home_container a .favori#vide {
+#home_container a .favori[id*=vide] {
   background-image: url(../scss/OhmyfoodImages/hearts.png);
   width: 100%;
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@ header + div {
   height: 100%;
   z-index: 2;
 }
-#home_container a .favori#plein {
+#home_container a .favori[id*=plein] {
   position: relative;
   bottom: 12px;
   background-image: url(../scss/OhmyfoodImages/lovey.png);

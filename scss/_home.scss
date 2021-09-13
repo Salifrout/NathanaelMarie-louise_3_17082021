@@ -187,10 +187,10 @@ header {
             position: absolute;
             right: 15%;
             bottom: 12px;
-            &:hover #plein {
+            &:hover [id*=plein] {
                     height: 100%;
                 }
-            &#vide {
+            &[id*=vide] {
                 background-image: url(../scss/OhmyfoodImages/hearts.png);
                 width: 100%;   
                 background-repeat: no-repeat;
@@ -198,7 +198,7 @@ header {
                 height: 100%;
                 z-index: 2;   
             }
-            &#plein {
+            &[id*=plein] {
                 position: relative;
                 bottom: 12px;
                 background-image: url(../scss/OhmyfoodImages/lovey.png);
