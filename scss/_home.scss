@@ -1,5 +1,6 @@
 #loading-page {
     width: 100%;
+    height: 100%;
     background-color: $color-tertiary;
     background-size: cover;
     z-index: 4;
@@ -49,12 +50,12 @@ appeared_home {
 
 header {
     text-align: center;
-     img {
+    img {
         width: 43%;
         margin-top: 28px;
         margin-bottom: 18px;
     }
-     + div {
+    + div {
         @extend .typography-title;
         background-color: #eaeaea;
         border-top-color: #cfcfcf;
@@ -64,7 +65,7 @@ header {
         background-image: url(../scss/OhmyfoodImages/local.png);
         background-size: 13px;
         background-repeat: no-repeat;
-        background-position: right 66% bottom 50%;
+        background-position: right 71% bottom 50%;
     }
 }
 
@@ -104,21 +105,21 @@ header {
     padding-bottom: 25px;
     background-image: url(../scss/OhmyfoodImages/phone.png);
     background-repeat: no-repeat;
-    background-size: 18px;
+    background-size: 15px;
     background-position: left 12% bottom 48%;
     background-color: #f6f6f6;
     border-radius: 24px;
     box-shadow: 6px 6px 8px #eaeaea;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     &.comp {
         background-image: url(../scss/OhmyfoodImages/nav.png);
-        background-size: 25px;
+        background-size: 22px;
     }
     &.mod {
         background-color: #f5edff;
         background-image: url(../scss/OhmyfoodImages/shop.png);
-        background-size: 25px;
+        background-size: 22px;
     }
     &_order {
         width: 24px;
@@ -211,6 +212,12 @@ header {
                 transition: height 2s ease-in-out;
             }
         }
+    }
+}
+
+@media (min-width: 980px) {
+    header + div {
+        background-position: right 56% bottom 50%;
     }
 }
 
